@@ -4,12 +4,12 @@ let Author = document.getElementById("author");
 let Generator = document.getElementById("gen-quote");
 
 const updater = () => {
-  Quote.innerHTML = allQuotes[Date.now() % allQuotes.length]["text"];
+  Quote.textContent = allQuotes[Date.now() % allQuotes.length]["text"];
   if (allQuotes[Date.now() % allQuotes.length]["author"]) {
-    Author.innerHTML =
+    Author.textContent =
       "- " + allQuotes[Date.now() % allQuotes.length]["author"];
   } else {
-    Author.innerHTML = "";
+    Author.textContent = "";
   }
 };
 
