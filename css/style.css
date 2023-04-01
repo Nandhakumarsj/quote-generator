@@ -6,7 +6,7 @@ html {
 
 body {
     margin: 0;
-    background-image: url('/Wave-10s-1488px.svg');
+    background-image: url('../assets/Wave-10s-1488px.svg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
