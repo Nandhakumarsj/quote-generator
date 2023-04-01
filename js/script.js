@@ -2,14 +2,23 @@ let allQuotes = [];
 let Quote = document.getElementById("quote");
 let Author = document.getElementById("author");
 let Generator = document.getElementById("gen-quote");
+let TwitterBtn = document.getElementById("twitter");
 
 const updater = () => {
-  Quote.textContent = allQuotes[Date.now() % allQuotes.length]["text"];
-  if (allQuotes[Date.now() % allQuotes.length]["author"]) {
-    Author.textContent =
-      "- " + allQuotes[Date.now() % allQuotes.length]["author"];
+  let text = allQuotes[Date.now() % allQuotes.length]["text"];
+  let author = allQuotes[Date.now() % allQuotes.length]["author"];
+  Quote.textContent = text;
+  // Long Quotes have to be written with different font size
+  if (text.length > 110) {
+    Quote.classList.add("long-quotes");
   } else {
-    Author.textContent = "";
+    Quote.classList.remove("long-quotes");
+  }
+  // Check and replace author field if not exists replace with "Unknown" Author
+  if (author) {
+    Author.textContent = "- " + author;
+  } else {
+    Author.textContent = "- Unknown";
   }
 };
 
@@ -49,8 +58,16 @@ const getQuotes = async () => {
   }
 };
 
+// Twitter Btn Function
+const TwitterHandler = () => {
+  const TwitterUrl = `https://twitter.com/intent/tweet?text=${Quote.textContent} - ${Author.textContent}`;
+  open(TwitterUrl, "_blank");
+};
+
 // On Load
 getQuotes();
 
 // On Button Click Generate update Quotes (Event Bubbling only handled here)
 Generator.addEventListener("click", getQuotes);
+// Twitter Btn Handler
+TwitterBtn.addEventListener("click", TwitterHandler);
