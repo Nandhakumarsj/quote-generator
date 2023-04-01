@@ -12,3 +12,7 @@
 - Can be able to tweet the quote directly if you are logged in to your `twitter` account
 
 > Works great offline but network is needed to get icons and font only
+
+## Deployment
+
+- Click [here](https://nandhakumarsj.github.io/quote-generator "Quote Generator") to view the deployment.
