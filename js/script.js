@@ -14,7 +14,7 @@ const updater = () => {
 };
 
 const getOfflineQuotes = async () => {
-  const response = fetch("offlineQuotes.json");
+  const response = fetch("../assets/offlineQuotes.json");
   // Only update 'allQuotes' variable if it is available and then change DOM
   try {
     response.then((res) => {
