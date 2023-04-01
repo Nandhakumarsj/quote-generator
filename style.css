@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url('/Wave-10s-1488px.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container {
+    padding: 2rem;
+    width: auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 1px 2px 5px 1px rgb(122, 40, 169);
+    text-align: center;
+}
+
+.quotes {
+    font-size: 2.75rem;
+}
+
+.long-quotes {
+    font-size: 2rem;
+}
+
+.quote-author {
+    margin-top: 1rem;
+    display: block;
+    text-align: right;
+    font-style: italic;
+    font-size: 1.7rem;
+}
+
+.fa-quote-left {
+    font-size: 4rem;
+}
+
+.fa-quote-right {
+    font-size: 4rem;
+}
+
+.button-group {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group button {
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: .4rem .8rem;
+    outline: none;
+    box-shadow: 0 0.3rem 2px rgba(255, 10, 125, 0.82);
+}
+
+.button-group button:hover {
+    cursor: pointer;
+    background-color: rgba(35, 18, 98, 0.15);
+    color: rgb(111, 16, 60);
+    border: none;
+}
+
+.button-group button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 1px 2px 0px rgba(255, 10, 125, 0.82);
+}
+
+@media screen and (max-width:1000px) {
+    .quote-container {
+        margin: auto 15px;
+    }
+
+    .quotes {
+        font-size: 2.2rem;
+    }
+
+    .quote-author {
+        font-size: 1.5rem;
+    }
+
+    .button-group button {
+        font-size: .85rem;
+    }
+}
