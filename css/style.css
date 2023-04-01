@@ -11,7 +11,9 @@ body {
     background-attachment: fixed;
     background-size: cover;
     font-family: "Montserrat", sans-serif;
-    height: 100vh;
+}
+.container{
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,6 +79,25 @@ body {
 .button-group button:active {
     transform: translate(0, 0.3rem);
     box-shadow: 0 1px 2px 0px rgba(255, 10, 125, 0.82);
+}
+.links{
+    display:flex;
+    flex-direction: row;
+}
+.links h5{
+    font-size: medium;
+}
+.links a{
+    padding: .2rem;
+    margin:1rem .5rem;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+footer a{
+    text-decoration:none;
 }
 
 @media screen and (max-width: 1000px) {
