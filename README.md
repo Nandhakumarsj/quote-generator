@@ -15,4 +15,4 @@
 
 ## Deployment
 
-- Click [here](https://nandhakumarsj.github.io/quote-generator ""){:target='_blank' rel='noopener'} to view the deployment.
+- Click [here](https://nandhakumarsj.github.io/quote-generator "Quote Generator") to view the deployment environment.
