@@ -3,7 +3,19 @@ let Quote = document.getElementById("quote");
 let Author = document.getElementById("author");
 let Generator = document.getElementById("gen-quote");
 let TwitterBtn = document.getElementById("twitter");
+let Container = document.getElementById('container');
+let Loader = document.getElementById('loader');
 
+const loading = () =>{
+  Container.classList.add('hide');
+  Loader.classList.add('loader');
+  Loader.classList.remove('hide');
+}
+const complete = () =>{
+Loader.classList.remove('loader');
+Loader.classList.add('hide');
+Container.classList.remove('hide');
+}
 const updater = () => {
   let text = allQuotes[Date.now() % allQuotes.length]["text"];
   let author = allQuotes[Date.now() % allQuotes.length]["author"];
@@ -20,9 +32,11 @@ const updater = () => {
   } else {
     Author.textContent = "- Unknown";
   }
+  complete();
 };
 
 const getOfflineQuotes = async () => {
+  loading();
   const response = fetch("../assets/offlineQuotes.json");
   // Only update 'allQuotes' variable if it is available and then change DOM
   try {
@@ -41,6 +55,7 @@ const getOfflineQuotes = async () => {
 
 const getQuotes = async () => {
   const url = "https://type.fit/api/quotes";
+  loading();
   try {
     // Response is seen as array of json for this specific API
     const response = await fetch(url);
