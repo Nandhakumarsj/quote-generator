@@ -4,6 +4,7 @@ html {
     box-sizing: border-box;
     background-image: url("../assets/Valley-10s-1488px.svg");
     background-size:cover;
+    background-repeat: no-repeat;
 }
 
 body {
@@ -24,6 +25,13 @@ h2{
 /* Loader class */
 .hide{
     display: none;
+}
+.loader-container{
+  height: 80vh;
+  margin:0;
+  justify-content: center;
+  display:flex;
+  align-items: center;
 }
 .loader {
     width: 50px;

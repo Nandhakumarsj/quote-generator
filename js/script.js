@@ -5,15 +5,18 @@ let Generator = document.getElementById("gen-quote");
 let TwitterBtn = document.getElementById("twitter");
 let Container = document.getElementById('container');
 let Loader = document.getElementById('loader');
+let LoaderContainer = document.getElementById('loader-container');
 
 const showLoader = () =>{
   Container.classList.add('hide');
   Loader.classList.add('loader');
   Loader.classList.remove('hide');
+  LoaderContainer.classList.add('loader-container');
 }
 const hideLoader = () =>{
 Loader.classList.remove('loader');
 Loader.classList.add('hide');
+LoaderContainer.classList.remove('loader-container');
 Container.classList.remove('hide');
 }
 const updater = () => {
