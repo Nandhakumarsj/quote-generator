@@ -3,9 +3,7 @@
 html {
     box-sizing: border-box;
     background-image: url("../assets/Valley-10s-1488px.svg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:auto;
+    background-size:cover;
 }
 
 body {
@@ -28,8 +26,8 @@ h2{
     display: none;
 }
 .loader {
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
     position: relative;
     transform: rotate(45deg);
