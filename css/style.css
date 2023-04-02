@@ -74,16 +74,16 @@ h2{
       box-shadow: 0 24px rgb(0, 0, 0), 24px 24px rgb(0, 0, 0), 24px 48px rgb(0, 0, 0), 0px 48px rgb(0, 0, 0);
     }
     62% {
-      box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgb(0, 0, 0), 24px 48px rgb(0, 0, 0), 0px 48px rgb(0, 0, 0);
+      box-shadow: 0 24px rgba(255, 255, 255, 0.684), 24px 24px rgb(0, 0, 0), 24px 48px rgb(0, 0, 0), 0px 48px rgb(0, 0, 0);
     }
     75% {
-      box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgba(255, 255, 255, 0), 24px 48px rgb(0, 0, 0), 0px 48px white;
+      box-shadow: 0 24px rgba(255, 255, 255, 0.684), 24px 24px rgba(255, 255, 255, 0), 24px 48px rgb(0, 0, 0), 0px 48px rgb(0, 0, 0);
     }
     87% {
-      box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px white;
+      box-shadow: 0 24px rgba(255, 255, 255, 0.684), 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px rgb(0, 0, 0);
     }
     100% {
-      box-shadow: 0 24px rgba(255, 255, 255, 0), 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px rgba(255, 255, 255, 0);
+      box-shadow: 0 24px rgba(255, 255, 255, 0.684), 24px 24px rgba(255, 255, 255, 0), 24px 48px rgba(255, 255, 255, 0), 0px 48px rgba(0, 0, 0, 0);
     }
   }
   

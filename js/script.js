@@ -6,12 +6,12 @@ let TwitterBtn = document.getElementById("twitter");
 let Container = document.getElementById('container');
 let Loader = document.getElementById('loader');
 
-const loading = () =>{
+const showLoader = () =>{
   Container.classList.add('hide');
   Loader.classList.add('loader');
   Loader.classList.remove('hide');
 }
-const complete = () =>{
+const hideLoader = () =>{
 Loader.classList.remove('loader');
 Loader.classList.add('hide');
 Container.classList.remove('hide');
@@ -32,11 +32,11 @@ const updater = () => {
   } else {
     Author.textContent = "- Unknown";
   }
-  complete();
+  hideLoader();
 };
 
 const getOfflineQuotes = async () => {
-  loading();
+  showLoader();
   const response = fetch("../assets/offlineQuotes.json");
   // Only update 'allQuotes' variable if it is available and then change DOM
   try {
@@ -55,7 +55,7 @@ const getOfflineQuotes = async () => {
 
 const getQuotes = async () => {
   const url = "https://type.fit/api/quotes";
-  loading();
+  showLoader();
   try {
     // Response is seen as array of json for this specific API
     const response = await fetch(url);
