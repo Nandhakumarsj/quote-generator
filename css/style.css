@@ -2,11 +2,10 @@
 
 html {
     box-sizing: border-box;
-    height: 100vh;
     background-image: url("../assets/Valley-10s-1488px.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size:auto;
 }
 
 body {
