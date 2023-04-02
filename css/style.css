@@ -2,14 +2,14 @@
 
 html {
     box-sizing: border-box;
-}
-
-body {
-    margin: 0;
     background-image: url("../assets/Valley-10s-1488px.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+body {
+    margin: 0;
     font-family: "Montserrat", sans-serif;
 }
 h2{
