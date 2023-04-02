@@ -26,7 +26,7 @@ h2{
 }
 /* Loader class */
 .hide{
-    display: none;
+    display: hidden;
 }
 .loader {
     width: 48px;
