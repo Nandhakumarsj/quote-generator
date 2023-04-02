@@ -210,6 +210,9 @@ footer a{
     .button-group button {
         font-size: 0.85rem;
     }
+    .container{
+      height: 100vh;
+    }
     footer {
         display:none;
     }
