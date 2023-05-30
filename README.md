@@ -12,7 +12,7 @@
 - Work in offline too after the rendering process
 - Can be able to tweet the quote directly if you are logged in to your `twitter` account
 
-> Works great offline but network is needed to get icons and font only
+> Works great while offline but network is needed for icons and fonts
 
 ## Deployment
 
