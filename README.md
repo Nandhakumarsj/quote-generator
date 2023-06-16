@@ -16,4 +16,4 @@
 
 ## Deployment
 
-- Click [here](https://nandhakumarsj.github.io/quote-generator "Quote Generator") to view the deployment environment.
+- [Click here](https://nandhakumarsj.github.io/quote-generator "Quote Generator") to view the deployment.
